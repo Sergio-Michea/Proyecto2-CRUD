@@ -44,8 +44,8 @@ h1 {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave para darle profundidad */
 }
 
-.table thead tr {
-    background-color: #ff0022; /* Fondo azul para el encabezado de la tabla */
+.table thead th {
+    background-color: #696565; /* Fondo gris para el encabezado de la tabla */
     color: #ffffff; /* Texto blanco para el encabezado */
 }
 
