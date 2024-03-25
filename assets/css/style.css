@@ -87,11 +87,14 @@ h1 {
 .table thead th {
     background-color: #696565; /* Fondo gris para el encabezado de la tabla */
     color: #ffffff; /* Texto blanco para el encabezado */
+   
+
 }
 
 .table td, .table th {
     border: 1px solid #dee2e6; /* Borde sutil para las celdas */
     padding: 8px; /* Espaciado interno para el contenido de las celdas */
+    
 }
 
 /* Ajustes para pantallas pequeñas */
