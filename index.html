@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Crud JavaScript</title>
+</head>
+<body>
+
+    <div class="text-center p-2 text-white">
+        <h1>JavaScript CRUD</h1>
+    </div>
+    <br>
+    <div class="container">
+        <div class="container mb-5">
+            <div class="row">
+
+                <div class="mb-3">
+                    <label class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Ingrese Correo Electrónico">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Ingrese Nombre Completo">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Número de Teléfono</label>
+                    <input type="number" class="form-control" id="inputPhone" placeholder="Ingrese Número Telefónico">
+                </div>
+
+                <!-- Contenedor de botones centrado -->
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary me-2" id="btnAdd" onclick="addData()">Guardar Datos</button>
+                    <button type="submit" class="btn btn-warning" id="btnUpdate">Actualizar Datos</button>
+                </div>
+
+            </div>
+            <hr>
+            <table class="table table-bordered" id="tableData">
+                <thead>
+                    <tr>
+                        <th scope="col">Correo Electrónico</th>
+                        <th scope="col">Nombre Completo</th>
+                        <th scope="col">Número de Teléfono</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>

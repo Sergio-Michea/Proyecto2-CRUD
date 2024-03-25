@@ -1,0 +1,67 @@
+/* Estilos Generales */
+body {
+    background-color: #f0f2f5; /* Fondo claro para la página */
+    color: #333; /* Color de texto oscuro para mejor legibilidad */
+    font-family: Arial, sans-serif; /* Fuente moderna y legible */
+}
+
+h1 {
+    color: #007bff; /* Color azul para el encabezado principal */
+}
+
+/* Estilos para los formularios */
+.form-label {
+    font-weight: bold; /* Etiquetas de formulario en negrita */
+    color: #333; /* Color oscuro para las etiquetas */
+    margin-top: 12px; /* Espacio superior para separar de otros elementos */
+}
+
+.form-control {
+    border-radius: 5px; /* Bordes redondeados para los campos de entrada */
+    border: 1px solid #ced4da; /* Borde sutil */
+}
+
+/* Estilos para TODOS los botones para asegurar uniformidad */
+.btn {
+    margin: 20px 5px 10px; /* Espaciado alrededor de los botones */
+    padding: 10px 24px; /* Padding generoso para hacer los botones más grandes */
+    border-radius: 20px; /* Bordes redondeados para los botones */
+    width: auto; /* Auto-ajuste del ancho basado en el contenido del botón */
+    display: inline-block; /* Para asegurar que los botones se muestren en línea */
+}
+
+/* Centrado y espaciado de botones */
+.d-flex {
+    justify-content: center; /* Centra los elementos flexibles horizontalmente */
+    align-items: center; /* Centra los elementos flexibles verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas múltiples si es necesario */
+}
+
+/* Estilos para las tablas */
+.table {
+    margin-top: 20px; /* Espacio superior para separarla de otros elementos */
+    background-color: #ffffff; /* Fondo blanco para la tabla */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave para darle profundidad */
+}
+
+.table thead tr {
+    background-color: #007bff; /* Fondo azul para el encabezado de la tabla */
+    color: #ffffff; /* Texto blanco para el encabezado */
+}
+
+.table td, .table th {
+    border: 1px solid #dee2e6; /* Borde sutil para las celdas */
+    padding: 8px; /* Espaciado interno para el contenido de las celdas */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .btn {
+        width: 100%; /* Hace que los botones ocupen todo el ancho en pantallas pequeñas */
+        margin: 10px 0; /* Ajusta el margen para que estén uno sobre otro */
+    }
+
+    .form-control {
+        margin-bottom: 10px; /* Espacio debajo de cada campo para evitar que se toquen */
+    }
+}
