@@ -24,7 +24,7 @@ h1 {
 /* Estilos para TODOS los botones para asegurar uniformidad */
 .btn {
     margin: 20px 5px 10px; /* Espaciado alrededor de los botones */
-    padding: 10px 24px; /* Padding generoso para hacer los botones más grandes */
+    padding: 10px 24px; /* Padding para hacer los botones más grandes */
     border-radius: 20px; /* Bordes redondeados para los botones */
     width: auto; /* Auto-ajuste del ancho basado en el contenido del botón */
     display: inline-block; /* Para asegurar que los botones se muestren en línea */
