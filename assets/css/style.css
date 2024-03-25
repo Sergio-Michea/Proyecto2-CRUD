@@ -9,6 +9,45 @@ h1 {
     color: #121213; /* Color negro para el encabezado principal */
 }
 
+.mb-3 {
+    margin-bottom: 1rem !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Cambiado a 100% para ser adaptable por defecto */
+    padding: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+}
+
+.mb-3 input {
+    width: 90%; /* Ajustado para un mejor espaciado en dispositivos pequeños */
+    margin: 0.5rem 0;
+}
+
+.mb-3 label {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Media query para tabletas */
+@media (min-width: 768px) {
+    .mb-3 {
+        width: 50%; /* Ajusta el ancho en dispositivos medianos */
+    }
+}
+
+/* Media query para computadoras de escritorio */
+@media (min-width: 992px) {
+    .mb-3 {
+        width: 30%; /* Vuelve al 30% para pantallas grandes */
+    }
+}
+
+
+
 /* Estilos para los formularios */
 .form-label {
     font-weight: bold; /* Etiquetas de formulario en negrita */
