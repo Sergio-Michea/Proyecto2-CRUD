@@ -6,9 +6,6 @@ body {
     font-family: Arial, sans-serif; /* Fuente moderna y legible */
 }
 
-h1 {
-    color: #1d1d1f; /* Color negro para el encabezado principal */
-}
 
 .mb-3 {
     margin-bottom: 1rem !important;
