@@ -36,33 +36,28 @@
     <div class="text-center p-2 text-white">
     <br>
     <div class="container">
-        <div class="container mb-5">
+        <div class="mb-5">
             <div class="row">
-
-                <div class="mb-3">
-                    <label class="form-label">Correo Electrónico</label>
+                <!-- Ajustes de columnas para responsividad -->
+                <div class="col-12 col-md-6 mb-3">
+                    <label for="inputEmail" class="form-label">Correo Electrónico</label>
                     <input type="email" class="form-control" id="inputEmail" placeholder="Ingrese Correo Electrónico">
                 </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Nombre Completo</label>
+                <div class="col-12 col-md-6 mb-3">
+                    <label for="inputName" class="form-label">Nombre Completo</label>
                     <input type="text" class="form-control" id="inputName" placeholder="Ingrese Nombre Completo">
                 </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Número de Teléfono</label>
+                <div class="col-12 mb-3">
+                    <label for="inputPhone" class="form-label">Número de Teléfono</label>
                     <input type="number" class="form-control" id="inputPhone" placeholder="Ingrese Número Telefónico">
                 </div>
-
                 <!-- Contenedor de botones centrado -->
-                <div class="d-flex justify-content-center">
+                <div class="col-12 d-flex justify-content-center">
                     <button type="submit" class="btn btn-primary me-2" id="btnAdd" onclick="addData()">Guardar Datos</button>
                     <button type="submit" class="btn btn-warning" id="btnUpdate">Actualizar Datos</button>
                 </div>
-
             </div>
-            <hr>
-            <table class="table table-bordered" id="tableData">
+            <table class="table table-bordered mt-5" id="tableData">
                 <thead>
                     <tr>
                         <th scope="col">Correo Electrónico</th>
@@ -72,10 +67,13 @@
                     </tr>
                 </thead>
                 <tbody>
-
+                    <!-- Contenido de la tabla -->
                 </tbody>
             </table>
         </div>
+    </div>
+    
+        
     </div>
 
     <script src="./assets/js/main.js"></script>

@@ -3,7 +3,7 @@
 body {
     background-color: #f0f2f5; /* Fondo claro para la página */
     color: #333; /* Color de texto oscuro para mejor legibilidad */
-    font-family: Arial, sans-serif; /* Fuente moderna y legible */
+    font-family: Arial, sans-serif; 
 }
 
 
@@ -44,9 +44,17 @@ body {
     }
 }
 
+.container table .table-bordered {
 
+
+
+}
 
 /* Estilos para los formularios */
+
+
+
+
 .form-label {
     font-weight: bold; /* Etiquetas de formulario en negrita */
     color: #333; /* Color oscuro para las etiquetas */
