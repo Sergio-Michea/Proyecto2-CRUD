@@ -1,8 +1,8 @@
 
 /* Estilos Generales */
 body {
-    background-color: #f0f2f5; /* Fondo claro para la página */
-    color: #333; /* Color de texto oscuro para mejor legibilidad */
+    background-color: #f0f2f5; /* Fondo claro  */
+    color: #333; /* Color de texto oscuro */
     font-family: Arial, sans-serif; 
 }
 
@@ -52,14 +52,14 @@ body {
 
 .form-label {
     font-weight: bold; /* Etiquetas de formulario en negrita */
-    color: #333; /* Color oscuro para las etiquetas */
+    color: #333; 
     margin-top: 12px; /* Espacio superior para separar de otros elementos */
     
 }
 
 .form-control {
     border-radius: 5px; /* Bordes redondeados para los campos de entrada */
-    border: 1px solid #ced4da; /* Borde sutil */
+    border: 1px solid #ced4da; /* Borde */
 }
 
 /* Estilos para TODOS los botones para asegurar uniformidad */
@@ -79,17 +79,19 @@ body {
 }
 
 /* Estilos para las tablas */
+
+
+
+
 .table {
-    margin-top: 20px; /* Espacio superior para separarla de otros elementos */
-    background-color: #ffffff; /* Fondo blanco para la tabla */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave para darle profundidad */
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.table thead th {
-    background-color: #696565; /* Fondo gris para el encabezado de la tabla */
-    color: #ffffff; /* Texto blanco para el encabezado */
-   
-
+.table th, .table td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd; /* Color de borde ligero para mejorar la legibilidad */
 }
 
 .table td, .table th {
@@ -98,17 +100,43 @@ body {
     
 }
 
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-    .btn {
-        width: 100%; /* Hace que los botones ocupen todo el ancho en pantallas pequeñas */
-        margin: 10px 0; /* Ajusta el margen para que estén uno sobre otro */
+/* Hacer la tabla responsiva */
+@media screen and (max-width: 768px) {}
+    .table {
+        display: block;
+        overflow-x: auto; /* Permite el scroll horizontal en pantallas pequeñas */
     }
 
-    .form-control {
-        margin-bottom: 10px; /* Espacio debajo de cada campo para evitar que se toquen */
+    .table thead {
+        display: none; /* Oculta el encabezado en dispositivos pequeños para ahorrar espacio */
     }
-}
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+    }
+
+    .table td {
+        text-align: right;
+        padding-left: 50%; /* texto no se amontone */
+        position: relative;
+    }
+
+    .table td::before {
+        
+        /* atributos para los títulos */
+        content: attr(data-title);
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: left;
+        padding-right: 10px;
+        font-weight: bol
+    }
 
 footer {
     font-family: Arial, sans-serif;
