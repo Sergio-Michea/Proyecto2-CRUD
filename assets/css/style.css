@@ -101,7 +101,7 @@ body {
 }
 
 /* Hacer la tabla responsiva */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {}
     .table {
         display: block;
         overflow-x: auto; /* Permite el scroll horizontal en pantallas pequeñas */
