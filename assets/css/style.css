@@ -1,8 +1,8 @@
 
 /* Estilos Generales */
 body {
-    background-color: #f0f2f5; /* Fondo claro  */
-    color: #333; /* Color de texto oscuro */
+    background-color: #f0f2f5; /* Fondo claro para la página */
+    color: #333; /* Color de texto oscuro para mejor legibilidad */
     font-family: Arial, sans-serif; 
 }
 
@@ -52,14 +52,14 @@ body {
 
 .form-label {
     font-weight: bold; /* Etiquetas de formulario en negrita */
-    color: #333; 
+    color: #333; /* Color oscuro para las etiquetas */
     margin-top: 12px; /* Espacio superior para separar de otros elementos */
     
 }
 
 .form-control {
     border-radius: 5px; /* Bordes redondeados para los campos de entrada */
-    border: 1px solid #ced4da; /* Borde */
+    border: 1px solid #ced4da; /* Borde sutil */
 }
 
 /* Estilos para TODOS los botones para asegurar uniformidad */
@@ -101,7 +101,7 @@ body {
 }
 
 /* Hacer la tabla responsiva */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
     .table {
         display: block;
         overflow-x: auto; /* Permite el scroll horizontal en pantallas pequeñas */
@@ -128,7 +128,7 @@ body {
 
     .table td::before {
         
-        /* atributos para los títulos */
+        /* Usa los atributos para los títulos */
         content: attr(data-title);
         position: absolute;
         left: 0;
